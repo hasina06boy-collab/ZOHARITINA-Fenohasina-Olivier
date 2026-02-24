@@ -158,8 +158,8 @@ body {
     height: auto;
     width: 420px;
     border-radius: 360px 560px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    /* padding: 1.5rem;
+    margin-bottom: 2rem; */
     box-shadow: 0 12px 30px rgba(0,0,0,0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     animation: fadeIn 1s ease forwards, gradientShift 10s ease infinite;
