@@ -718,3 +718,58 @@ button:hover {
         letter-spacing: 3px;
     }
 }
+/* ===== BADGE ÉTUDIANT SUR LA PHOTO ===== */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.badge-etudiant {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #00f9e4, #1cc19b);
+    color: #1a1a1a;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 249, 228, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: bounce 2s infinite;
+}
+
+.badge-etudiant i {
+    font-size: 1.1rem;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Ajustement responsive pour le badge */
+@media screen and (max-width: 768px) {
+    .badge-etudiant {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .badge-etudiant {
+        bottom: 15px;
+        right: 15px;
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+}
