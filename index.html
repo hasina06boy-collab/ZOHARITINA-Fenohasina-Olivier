@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZOHARITINA Fenohasina Olivier - Portfolio</title>
-    <meta name="description" content="Portfolio professionnel de ZOHARITINA Fenohasina Olivier, développeur et designer">
-    
+
     <!-- CSS externe -->
     <link rel="stylesheet" href="style.css">
     
@@ -18,65 +17,177 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Particules animées en arrière-plan -->
-    <div class="particles">
-        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
-        <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
-        <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
-        <div class="particle" style="left: 40%; animation-delay: 1s;"></div>
-        <div class="particle" style="left: 50%; animation-delay: 3s;"></div>
-        <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
-        <div class="particle" style="left: 70%; animation-delay: 0.5s;"></div>
-        <div class="particle" style="left: 80%; animation-delay: 2.5s;"></div>
-        <div class="particle" style="left: 90%; animation-delay: 4.5s;"></div>
-        <div class="particle" style="left: 95%; animation-delay: 1.5s;"></div>
+    <!-- Animation de bienvenue -->
+    <div class="welcome-animation">
+        <div class="welcome-content">
+            <h1 class="welcome-title">Bienvenue</h1>
+            <p class="welcome-subtitle">sur mon portfolio</p>
+            <div class="welcome-loader">
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+            </div>
+        </div>
     </div>
 
-    <section class="apropos">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">FENOHASINA.</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#connaissances">Connaissances</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="apropos">
         <div class="main">
-            <div class="image-container">
-                <img src="sary/LMC_20250321_163729_🌈Color boost (2).jpg" 
-                     alt="Photo de profil de ZOHARITINA Fenohasina Olivier"
-                     loading="lazy">
-                <div class="badge">
-                    <i class="fas fa-code"></i> Étudiant
-                </div>
-            </div>
+            <img src="sary/LMC_20250321_163729_🌈Color boost (2).jpg" alt="Photo de profil ZOHARITINA Fenohasina Olivier">
             <div class="texte-apropos">
                 <h1>ZOHARITINA Fenohasina Olivier</h1>
                 <h5>Développeur <span>& Designer</span></h5>
-                <p>
-                    <i class="fas fa-quote-left" style="color: #00f9e4; margin-right: 0.5rem; font-size: 0.8em;"></i>
-                    Je suis un étudiant de l'École Managimantes d'Innovation et Technique, passionné par la création de solutions numériques innovantes et design.
-                    <i class="fas fa-quote-right" style="color: #00f9e4; margin-left: 0.5rem; font-size: 0.8em;"></i>
-                </p>
-                
+                <p>Je suis un étudiant passionné de l'École Managimantes d'Innovation et Technique, spécialisé dans le développement web et le design créatif. Mon objectif est de créer des expériences numériques uniques et fonctionnelles.</p>
                 <div class="button-groupe">
-                    <a href="tel:0382412164" aria-label="Appeler Olivier">
-                        <button type="button">
-                            <i class="fas fa-phone-alt" style="margin-right: 0.5rem;"></i>
-                            Me contacter
-                        </button>
+                    <a href="tel:0382412164">
+                        <button type="button"><i class="fas fa-phone-alt"></i> Me contacter</button>
                     </a>
-                    <a href="c/code.docx" download="ZOHARITINA_CV.docx" target="_blank" aria-label="Télécharger le CV">
-                        <button type="button">
-                            <i class="fas fa-download" style="margin-right: 0.5rem;"></i>
-                            Télécharger CV
-                        </button>
+                    <a href="c/code.docx" download="ZOHARITINA_CV.docx">
+                        <button type="button"><i class="fas fa-download"></i> Télécharger CV</button>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Liens sociaux optionnels -->
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+    <!-- Section Parcours Scolaire (CEP, BEPC, BACC) -->
+    <section id="parcours" class="parcours-scolaire">
+        <h2 class="section-titre">Mon Parcours Scolaire</h2>
+        <div class="timeline">
+            <!-- Baccalauréat -->
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - 2024</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-graduation-cap"></i> Baccalauréat</h3>
+                    <p>Série Scientifique (D)</p>
+                    <p>Mention : Assez Bien</p>
+                </div>
+            </div>
+
+            <!-- BEPC -->
+            <div class="timeline-item">
+                <div class="timeline-date">2019 - 2020</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-certificate"></i> BEPC</h3>
+                    <p>Brevet d'Études du Premier Cycle</p>
+                    <p>Mention : Assez Bien</p>
+                </div>
+            </div>
+
+            <!-- CEP -->
+            <div class="timeline-item">
+                <div class="timeline-date">2015 - 2016</div>
+                <div class="timeline-content">
+                    <h3><i class="fas fa-school"></i> CEP</h3>
+                    <p>Certificat d'Études Primaires</p>
+                    <p>Admis avec mention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Connaissances -->
+    <section id="connaissances" class="connaissances">
+        <h2 class="section-titre">Mes Connaissances</h2>
+        <div class="connaissances-container">
+            <!-- Développement Web (HTML et CSS uniquement) -->
+            <div class="categorie-connaissance">
+                <h3><i class="fas fa-code"></i> Développement Web</h3>
+                <div class="competence-item">
+                    <span>HTML5</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <span>CSS3</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design & Créativité (Photoshop et Animation CSS uniquement) -->
+            <div class="categorie-connaissance">
+                <h3><i class="fas fa-paint-brush"></i> Design & Créativité</h3>
+                <div class="competence-item">
+                    <span>Photoshop</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <span>Animation CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connaissances Générales (HTML, Économie, CSS, Français, Informatique) -->
+            <div class="categorie-connaissance">
+                <h3><i class="fas fa-book"></i> Connaissances Générales</h3>
+                <div class="badge-container">
+                    <span class="badge">HTML</span>
+                    <span class="badge">Économie</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">Français</span>
+                    <span class="badge">Informatique</span>
+                </div>
+            </div>
+
+            <!-- Langues -->
+            <div class="categorie-connaissance">
+                <h3><i class="fas fa-language"></i> Langues</h3>
+                <div class="competence-item">
+                    <span>Malgache</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <span>Français</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="competence-item">
+                    <span>Anglais</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-titre">Contactez-moi</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>038 24 121 64</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hasina06boy@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Fianarantsoa, Madagascar</p>
                 </div>
             </div>
         </div>
